@@ -5,7 +5,27 @@
 <title>Star Trader India</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- ✅ Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '903532915758205');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=903532915758205&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 *{box-sizing:border-box}
@@ -13,87 +33,139 @@ body{
   margin:0;
   min-height:100vh;
   font-family:Poppins,sans-serif;
-  background:linear-gradient(135deg,#e3f2fd,#f5f7fb);
+  background:linear-gradient(135deg,#e9f3fb,#f5f7fb);
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
 }
-.sk-box{
+.card{
   width:100%;
   max-width:420px;
   background:#fff;
-  padding:26px 22px;
-  border-radius:18px;
-  box-shadow:0 18px 40px rgba(0,0,0,.15);
+  padding:28px 22px;
+  border-radius:26px;
+  box-shadow:0 22px 50px rgba(0,0,0,.12);
   text-align:center;
 }
-.sk-logo{
-  width:70px;height:70px;
-  margin:0 auto 12px;
+.logo{
+  width:84px;height:84px;
+  margin:0 auto 14px;
   border-radius:50%;
   overflow:hidden;
 }
-.sk-logo img{width:100%;height:100%;object-fit:cover}
-h1{font-size:22px;margin:6px 0}
-.sk-sub{font-size:14px;color:#666;line-height:1.5;margin-bottom:16px}
-.sk-list{list-style:none;padding:0;margin:16px 0}
-.sk-list li{font-size:14px;margin-bottom:10px}
-.sk-check-wrap{position:relative;margin:18px auto 0;max-width:320px}
-.sk-arrow{position:absolute;left:-20px;top:14px;font-size:20px;animation:bounce 1.2s infinite}
-@keyframes bounce{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
-.sk-check{background:#f5f7fb;padding:14px;border-radius:12px;font-size:13px;text-align:left}
-.sk-btn{
-  display:block;width:100%;margin-top:18px;padding:15px;
-  background:#1e88e5;color:#fff;text-decoration:none;
-  border-radius:12px;font-weight:600;
-  opacity:.6;pointer-events:none
+.logo img{width:100%;height:100%;object-fit:cover}
+h1{font-size:26px;margin:10px 0 6px}
+.sub{font-size:15px;color:#666;line-height:1.6}
+.points{margin:20px 0;padding:0;list-style:none}
+.points li{font-size:16px;margin:12px 0}
+.confirm{
+  margin:18px 0 22px;
+  background:#f3f6fb;
+  border-radius:14px;
+  padding:14px;
+  text-align:left;
+  font-size:15px;
 }
-.sk-btn.enabled{opacity:1;pointer-events:auto}
-.sk-note,.sk-footer{font-size:11px;color:#777;margin-top:14px}
-.sk-footer a{color:#1e88e5;text-decoration:none}
-@media(max-width:360px){.sk-arrow{display:none}}
+.btn{
+  display:block;
+  width:100%;
+  background:#8bbcf2;
+  color:#fff;
+  text-decoration:none;
+  padding:18px;
+  border-radius:18px;
+  font-size:18px;
+  font-weight:600;
+  opacity:.5;
+  pointer-events:none;
+  transition:.3s;
+}
+.btn.enabled{
+  opacity:1;
+  pointer-events:auto;
+}
+.note{
+  margin-top:16px;
+  font-size:13px;
+  color:#777;
+}
+.footer{
+  margin-top:20px;
+  font-size:12px;
+  color:#888;
+  line-height:1.6;
+}
+.footer a{
+  color:#4a90e2;
+  text-decoration:none;
+  margin:0 4px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="sk-box">
-  <div class="sk-logo"><img src="star.jpeg"></div>
+<div class="card">
+
+  <div class="logo">
+    <img src="star.jpeg" alt="Star Trader India">
+  </div>
+
   <h1>Star Trader India</h1>
 
-  <div class="sk-sub">
+  <div class="sub">
     Learn <strong>Forex & Crypto</strong> Market Structure and Rule-Based Trading<br>
     Designed for serious learners • No tips • No signals
   </div>
 
-  <ul class="sk-list">
+  <ul class="points">
     <li>✔ Understand Forex & Crypto market movements</li>
     <li>✔ Learn discipline & rule-based trading</li>
     <li>✔ Step-by-step educational approach</li>
     <li>✔ Community-driven learning</li>
   </ul>
 
-  <div class="sk-check-wrap">
-    <div class="sk-arrow">👉</div>
-    <div class="sk-check">
-      <label>
-        <input type="checkbox" id="c"> I'm Serious About Trading
-      </label>
-    </div>
+  <div class="confirm">
+    👉 <input type="checkbox" id="ok">
+    <strong>I'm Serious About Trading</strong>
   </div>
 
-  <a id="b" class="sk-btn" href="https://t.me/+ItblrDOcOCw4ZGY1" target="_blank">
-    Continue to Telegram
+  <a id="go" class="btn"
+     href="https://t.me/+ItblrDOcOCw4ZGY1"
+     target="_blank">
+     Continue to Telegram
   </a>
 
-  <div class="sk-note">Trading involves risk.</div>
-  <div class="sk-footer">Not affiliated with Meta Platforms, Inc.</div>
+  <div class="note">
+    Trading involves risk.
+  </div>
+
+  <div class="footer">
+    <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
+    <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
+    <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
+    <br>
+    Not affiliated with Meta Platforms, Inc.
+  </div>
+
 </div>
 
 <script>
-document.getElementById("c").onchange=e=>{
-  document.getElementById("b").classList.toggle("enabled",e.target.checked)
-}
+const c=document.getElementById("ok");
+const b=document.getElementById("go");
+
+c.addEventListener("change",()=>{
+  b.classList.toggle("enabled",c.checked);
+  if(c.checked && typeof fbq==="function"){
+    fbq('track','Lead');
+  }
+});
+
+b.addEventListener("click",()=>{
+  if(typeof fbq==="function"){
+    fbq('track','CompleteRegistration');
+  }
+});
 </script>
 
 </body>
