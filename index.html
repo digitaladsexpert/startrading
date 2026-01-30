@@ -40,7 +40,6 @@ body{
   justify-content:center;
 }
 
-/* Card */
 .card{
   width:100%;
   max-width:420px;
@@ -51,7 +50,6 @@ body{
   text-align:center;
 }
 
-/* Logo */
 .logo{
   width:84px;
   height:84px;
@@ -65,7 +63,6 @@ body{
   object-fit:cover;
 }
 
-/* Text */
 h1{
   font-size:26px;
   margin:10px 0 6px;
@@ -76,7 +73,6 @@ h1{
   line-height:1.6;
 }
 
-/* Points */
 .points{
   margin:20px 0;
   padding:0;
@@ -87,7 +83,6 @@ h1{
   margin:12px 0;
 }
 
-/* Checkbox */
 .confirm{
   margin:18px 0 22px;
   background:#f3f6fb;
@@ -97,11 +92,10 @@ h1{
   font-size:15px;
 }
 
-/* CTA Button */
 .btn{
   display:block;
   width:100%;
-  background:#c9def8;        /* disabled */
+  background:#c9def8;
   color:#fff;
   text-decoration:none;
   padding:18px;
@@ -112,25 +106,23 @@ h1{
   pointer-events:none;
   transition:all .3s ease;
 }
-
 .btn.enabled{
-  background:#1e88e5;        /* ACTIVE */
+  background:#1e88e5;
   opacity:1;
   pointer-events:auto;
   box-shadow:0 12px 28px rgba(30,136,229,.45);
 }
-
 .btn.enabled:hover{
   background:#1565c0;
   transform:translateY(-1px);
 }
 
-/* Footer */
 .note{
   margin-top:16px;
   font-size:13px;
   color:#777;
 }
+
 .footer{
   margin-top:20px;
   font-size:12px;
@@ -141,6 +133,11 @@ h1{
   color:#4a90e2;
   text-decoration:none;
   margin:0 4px;
+}
+.adby{
+  margin-top:6px;
+  font-size:12px;
+  color:#666;
 }
 </style>
 </head>
@@ -186,8 +183,15 @@ h1{
     <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
     <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
     <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
-    <br>
-    Not affiliated with Meta Platforms, Inc.
+    <div class="adby">
+      Advertised by
+      <a href="https://t.me/+dAEagvqNHo45ZGI1" target="_blank">
+        <strong>ShriRam Media Agency</strong>
+      </a>
+    </div>
+    <div>
+      Not affiliated with Meta Platforms, Inc.
+    </div>
   </div>
 
 </div>
@@ -198,7 +202,6 @@ const b = document.getElementById("go");
 
 c.addEventListener("change", () => {
   b.classList.toggle("enabled", c.checked);
-
   if(c.checked && typeof fbq === "function"){
     fbq('track','Lead');
   }
