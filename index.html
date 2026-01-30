@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Star Trader India</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Star Trader India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '903532915758205');
-  fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=903532915758205&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Meta Pixel Code -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Poppins,sans-serif;
+  background:linear-gradient(135deg,#e3f2fd,#f5f7fb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.sk-box{
+  width:100%;
+  max-width:420px;
+  background:#fff;
+  padding:26px 22px;
+  border-radius:18px;
+  box-shadow:0 18px 40px rgba(0,0,0,.15);
+  text-align:center;
+}
+.sk-logo{
+  width:70px;height:70px;
+  margin:0 auto 12px;
+  border-radius:50%;
+  overflow:hidden;
+}
+.sk-logo img{width:100%;height:100%;object-fit:cover}
+h1{font-size:22px;margin:6px 0}
+.sk-sub{font-size:14px;color:#666;line-height:1.5;margin-bottom:16px}
+.sk-list{list-style:none;padding:0;margin:16px 0}
+.sk-list li{font-size:14px;margin-bottom:10px}
+.sk-check-wrap{position:relative;margin:18px auto 0;max-width:320px}
+.sk-arrow{position:absolute;left:-20px;top:14px;font-size:20px;animation:bounce 1.2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+.sk-check{background:#f5f7fb;padding:14px;border-radius:12px;font-size:13px;text-align:left}
+.sk-btn{
+  display:block;width:100%;margin-top:18px;padding:15px;
+  background:#1e88e5;color:#fff;text-decoration:none;
+  border-radius:12px;font-weight:600;
+  opacity:.6;pointer-events:none
+}
+.sk-btn.enabled{opacity:1;pointer-events:auto}
+.sk-note,.sk-footer{font-size:11px;color:#777;margin-top:14px}
+.sk-footer a{color:#1e88e5;text-decoration:none}
+@media(max-width:360px){.sk-arrow{display:none}}
+</style>
 </head>
 
 <body>
 
-  <div class="sk-box">
+<div class="sk-box">
+  <div class="sk-logo"><img src="star.jpg"></div>
+  <h1>Star Trader India</h1>
 
-    <div class="sk-logo">
-      <img src="star.jpg" alt="Star Trader India">
-    </div>
-
-    <h1>Star Trader India</h1>
-
-    <div class="sk-sub">
-      Learn <strong>Forex & Crypto</strong> Market Structure and Rule-Based Trading<br>
-      Designed for serious learners • No tips • No signals
-    </div>
-
-    <ul class="sk-list">
-      <li>✔ Understand Forex & Crypto market movements</li>
-      <li>✔ Learn discipline & rule-based trading strategies</li>
-      <li>✔ Step-by-step educational approach</li>
-      <li>✔ Community-driven learning environment</li>
-    </ul>
-
-    <div class="sk-check-wrap">
-      <div class="sk-arrow">👉</div>
-      <div class="sk-check">
-        <label>
-          <input type="checkbox" id="skConfirm">
-          I understand this is <strong>educational only</strong> and not investment advice
-        </label>
-      </div>
-    </div>
-
-    <a id="skJoin" class="sk-btn"
-       href="https://t.me/+ItblrDOcOCw4ZGY1"
-       target="_blank">
-       Continue to Telegram
-    </a>
-
-    <div class="sk-note">
-      By proceeding, you confirm that you understand all risks involved in Forex & Crypto markets.
-    </div>
-
-    <div class="sk-footer">
-      <a href="https://elitepips.online/terms/" target="_blank">Terms</a> |
-      <a href="https://elitepips.online/privacy/" target="_blank">Privacy</a> |
-      <a href="https://elitepips.online/disclaimer/" target="_blank">Disclaimer</a>
-
-      <div class="sk-managed">
-        Advertised by
-        <a href="https://t.me/+dAEagvqNHo45ZGI1" target="_blank">
-          <strong>ShriRam Media Agency</strong>
-        </a>
-      </div>
-
-      <div>Not affiliated with Meta Platforms, Inc.</div>
-    </div>
-
+  <div class="sk-sub">
+    Learn <strong>Forex & Crypto</strong> Market Structure and Rule-Based Trading<br>
+    Designed for serious learners • No tips • No signals
   </div>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
+  <ul class="sk-list">
+    <li>✔ Understand Forex & Crypto market movements</li>
+    <li>✔ Learn discipline & rule-based trading</li>
+    <li>✔ Step-by-step educational approach</li>
+    <li>✔ Community-driven learning</li>
+  </ul>
+
+  <div class="sk-check-wrap">
+    <div class="sk-arrow">👉</div>
+    <div class="sk-check">
+      <label>
+        <input type="checkbox" id="c"> Educational only
+      </label>
+    </div>
+  </div>
+
+  <a id="b" class="sk-btn" href="https://t.me/+ItblrDOcOCw4ZGY1" target="_blank">
+    Continue to Telegram
+  </a>
+
+  <div class="sk-note">Trading involves risk.</div>
+  <div class="sk-footer">Not affiliated with Meta Platforms, Inc.</div>
+</div>
+
+<script>
+document.getElementById("c").onchange=e=>{
+  document.getElementById("b").classList.toggle("enabled",e.target.checked)
+}
+</script>
 
 </body>
 </html>
